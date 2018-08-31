@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "article",
+  "info": {
+    "name": "article",
+    "description": "Basic article"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "New article",
+      "type": "string"
+    },
+    "Content": {
+      "default": "",
+      "type": "text"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Type": {
+      "default": "default",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "default"
+      ]
+    },
+    "Visible": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}
