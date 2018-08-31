@@ -80,6 +80,10 @@ export default {
   margin: 0 auto;
   top: 38%;
   z-index: 2;
+
+  @media (max-width: 1200px) {
+    top: 32%;
+  }
 }
 
 .splash-button,
